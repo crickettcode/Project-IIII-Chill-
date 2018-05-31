@@ -3,13 +3,13 @@ class CreateCheckIns < ActiveRecord::Migration[5.2]
     create_table :check_ins do |t|
       t.string :time_of_day
       t.string :mood
-      t.number :hunger
-      t.number :energy
-      t.number :physical
-      t.number :mental
-      t.number :motivated
-      t.number :grateful
-      t.number :supported
+      t.integer :hunger
+      t.integer :energy
+      t.integer :physical
+      t.integer :mental
+      t.integer :motivated
+      t.integer :grateful
+      t.integer :supported
 
       t.timestamps
     end
