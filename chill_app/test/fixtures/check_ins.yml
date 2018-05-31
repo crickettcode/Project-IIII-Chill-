@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time_of_day: MyString
+  mood: MyString
+  hunger: 
+  energy: 
+  physical: 
+  mental: 
+  motivated: 
+  grateful: 
+  supported: 
+
+two:
+  time_of_day: MyString
+  mood: MyString
+  hunger: 
+  energy: 
+  physical: 
+  mental: 
+  motivated: 
+  grateful: 
+  supported: 
