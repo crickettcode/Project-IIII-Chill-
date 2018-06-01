@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import "./App.css"
 import axios from 'axios'
-import Navbar from './components/Navbar'
+import NavBar from './components/Navbar'
 
 class App extends Component {
   render() {
@@ -11,9 +11,9 @@ class App extends Component {
         <div className="App">
 
           <div>
-            <Navbar>
+            <NavBar>
               <h1>Chill</h1>
-            </Navbar>
+            </NavBar>
             <div>
 
               <div><Link to="/">All Journal Entries</Link></div>
