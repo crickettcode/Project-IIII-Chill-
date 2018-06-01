@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import "./App.css"
-// import logo from './logo.svg';
-
+import axios from 'axios'
+import Navbar from './components/Navbar'
 
 class App extends Component {
   render() {
@@ -11,8 +11,11 @@ class App extends Component {
         <div className="App">
 
           <div>
-            <h1>Chill</h1>
+            <Navbar>
+              <h1>Chill</h1>
+            </Navbar>
             <div>
+
               <div><Link to="/">All Journal Entries</Link></div>
             </div>
           </div>
