@@ -10,6 +10,14 @@ def show
     render json: @journal_entries
 end 
 
+def create 
+    @user = User.find(params[:user_id])
+    @journal_entries = @user.journal_entries.create!(journal_entry_params)
+    render json: @journal_entries
+end 
+
+
+
 # def create 
 # @user = User.create!(user_params)
 # render json:@user
