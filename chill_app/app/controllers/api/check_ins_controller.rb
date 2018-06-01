@@ -10,11 +10,11 @@ def index
         render json: @check_ins
     end 
     
-    # def create 
-    #     @user = User.find(params[:user_id])
-    #     @journal_entries = @user.journal_entries.create!(journal_entry_params)
-    #     render json: @journal_entries
-    # end 
+    def create 
+        @user = User.find(params[:user_id])
+        @check_ins = @user.check_ins.create!(check_ins_params)
+        render json: @check_ins
+    end 
     
     
     
