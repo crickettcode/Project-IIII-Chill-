@@ -18,12 +18,12 @@ class App extends Component {
               </NavBar>
               <div>
 
-                <div><Link to="/">All Journal Entries</Link></div>
+                <div><Link to="/">ProfilePage</Link></div>
               </div>
             </div>
 
             <Route exact path="/" component={ProfilePage} />
-            {/* <Route path="/artist/:id" component={Artist} /> */}
+            {/* <Route path="/users/:id" component={HomePage} /> */}
 
           </div>
         </Switch>
