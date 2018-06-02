@@ -18,7 +18,7 @@ class NewUser extends Component {
     handleChange = (event) => {
         const newname = event.target.newname
         const newUser = { ...this.state.newUser }
-        newPost[newname] = event.target.value
+        newUser[newname] = event.target.value
         this.setState({ newUser })
     }
 
