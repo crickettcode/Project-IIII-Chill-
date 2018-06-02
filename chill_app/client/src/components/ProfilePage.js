@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import styled from 'styled-components'
+import styled from 'styled-components'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import axios from 'axios'
 
@@ -44,12 +44,19 @@ class ProfilePage extends Component {
 
 
         return (
-            <div>
-                <h1>ProfilePage</h1>
-                {userData}
-            </div>
+            <Profile>
+                <div>
+                    <h1>ProfilePage</h1>
+                    {userData}
+                </div>
+            </Profile>
         );
     }
 }
 
 export default ProfilePage;
+
+const Profile = styled.div`
+background: #8FFDFF;
+font-family:'Courier New', Courier, monospace;
+`
