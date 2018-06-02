@@ -4,7 +4,7 @@ import "./App.css"
 import axios from 'axios'
 import NavBar from './components/Navbar'
 import ProfilePage from './components/ProfilePage'
-
+import LandingPage from './components/LandingPage'
 class App extends Component {
   render() {
     return (
@@ -18,11 +18,13 @@ class App extends Component {
               </NavBar>
               <div>
 
-                <div><Link to="/">ProfilePage</Link></div>
+                <div><Link to="/users">ProfilePage</Link></div>
+                <Link to="/">Home</Link>
               </div>
             </div>
 
             <Route exact path="/users/:id" component={ProfilePage} />
+            <Route exact path="/users" component={LandingPage} />
             {/* <Route path="/users/:id" component={HomePage} /> */}
 
           </div>
