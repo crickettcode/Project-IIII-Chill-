@@ -2,52 +2,43 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import axios from 'axios'
+import Axios from 'axios';
 
 class ProfilePage extends Component {
 
     state = {
-        users: []
+        user: {}
     }
 
     componentDidMount() {
-        this.getAllUsers();
+        this.getUser()
     }
 
-    getAllUsers = async () => {
-        try {
-            const response = await axios.get('/api/users')
-            await this.setState({ users: response.data })
-            return response.data
-        }
-
-        catch (err) {
-            await this.setState({ err: err.message })
-            return err.message
-        }
-    }
-
-
-
-    render() {
-
-        const userData = this.state.users.map(user => {
-            console.log("Show Users", this.state.users.length)
-            return <div key={user.id}>
-
-                <Link to={`/users/${user.id}`}>{user.name}</Link>
-            </div>
-            if (this.state.err) {
-                return <div>{this.state.err}</div>
-            }
+    getUser = async () => {
+        const userid = this.props.match.params.id
+        const response = await axios.get(`/api/users/${userid}`)
+        console.log(response.data)
+        this.setState({
+            user: response.data
 
         })
+        console.log(this.state)
+    }
 
-
+    render() {
         return (
             <Profile>
                 <div>
                     <h1>ProfilePage</h1>
-                    {userData}
+                    <User>
+                        {this.state.user.username}
+
+                        {this.state.user.email}
+
+                        {this.state.user.date_of_birth}
+
+                        {this.state.user.gender}
+                    </User>
                 </div>
             </Profile>
         );
@@ -59,4 +50,12 @@ export default ProfilePage;
 const Profile = styled.div`
 background: #8FFDFF;
 font-family:'Courier New', Courier, monospace;
+`
+const User = styled.div`
+background:#FFCD8F;
+display:flex;
+justify-content:space-between;
+flex-direction:column-reverse;
+padding:20px;
+
 `
