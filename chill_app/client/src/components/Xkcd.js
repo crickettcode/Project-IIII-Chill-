@@ -25,8 +25,9 @@ class Xkcd extends Component {
             <Comic>
                 <div>
                     <button onClick={this.getXkcd}>Comic</button>
-                    <h1>Make me Laugh</h1>
+                    <h1></h1>
                     {this.state.xkcd.alt}
+                    <br />
                     <img src={this.state.xkcd.img} />
                     {this.state.xkcd.link}
                 </div>
@@ -39,4 +40,13 @@ class Xkcd extends Component {
 export default Xkcd;
 
 const Comic = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+background:#FFFFBA;
+border-radius:10px;
+border:solid;
+border-color:#50D9E8;
+padding:20px;
+margin:20px;
 `
