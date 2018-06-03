@@ -22,24 +22,21 @@ class Xkcd extends Component {
     render() {
 
         return (
-            <div>
-                <button onClick={this.getXkcd}>Comic</button>
-                <h1>Make me Laugh</h1>
-                {this.state.xkcd.alt}
-                {this.state.xkcd.day}
-                <img src={this.state.xkcd.img} />
-                {this.state.xkcd.link}
-                {this.state.xkcd.month}
-                {this.state.xkcd.news}
-                {this.state.xkcd.number}
-                {this.state.xkcd.safe_title}
-                {this.state.xkcd.title}
-                {this.state.xkcd.transcript}
-                {this.state.xkcd.year}
-            </div>
+            <Comic>
+                <div>
+                    <button onClick={this.getXkcd}>Comic</button>
+                    <h1>Make me Laugh</h1>
+                    {this.state.xkcd.alt}
+                    <img src={this.state.xkcd.img} />
+                    {this.state.xkcd.link}
+                </div>
+            </Comic>
         )
     }
 }
 
 
 export default Xkcd;
+
+const Comic = styled.div`
+`
