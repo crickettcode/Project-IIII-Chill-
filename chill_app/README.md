@@ -1,20 +1,17 @@
 
 
-[This is Chill](https://project4-chill-app.herokuapp.com/)
-
-[ERD & WireFrame](https://imgur.com/a/ly5k7Ki)
-<br>
-[Trello](https://trello.com/b/vDadP0wO/project-chi)
-
-
 # Project IIII/Chill
 
 
 > Project Chill is an application that was intended to be a stress tracker. The app has three models which include: the user, journal entries, and check-ins'. The user is able to "check in" throughout the day and record their stress level by entering in a score within a range of (1-10). One being best and 10 being worst. The areas include factors such as "hunger", "gratitude", "motivation", and so forth. The API "re-charts" would then be used to graph their stress levels over a specified amount of time. There is also a place for the user to enter a journal entry in paragraph form to summarize their emotions throughout the day. The API Watson would then be used to analyze the users' overall emotional health over the same time period. At the end of the week, the user would then have two forms of data to determine their overall emotional health and stress level. These two methods of collection would then allow for comparing and contrasting the user's idea of how they "thought they felt" against the AI's synopsis of the data analyzed. I thought that this would be an interesting and different angle on improving emotional well being and promoting better habits to manage stress levels. I also included the XKCD API to generate random comics and keep things fun and light.
 
 
+[This is Chill](https://project4-chill-app.herokuapp.com/)
 
- It was built with the intention of members posting/sharing their favorite locations across the world with their fellow travelers. Our client requested a clean layout with a user friendly interface that would allow sharing the joys of "vagabonding" to be a seamless and beautiful experience, an artform within itself. 
+[ERD & WireFrame](https://imgur.com/a/ly5k7Ki)
+<br>
+[Trello](https://trello.com/b/vDadP0wO/project-chi)
+
 
 ## Technologies Used 
 
@@ -28,22 +25,9 @@ The technologies that we used were:
 * _Slack_ for group communication 
 * _Github_ for version control  
 * _HTML 5 / CSS 3_
-* _VSCODE_ as our code editor 
+* _VSCODE_ as code editor 
 
-### This is a link to our github 
-
-[Project Vagabond](https://github.com/benwill777/group_project_vagabond)
-
-### This is a link to our Trello 
-
-[Group Trello](https://trello.com/b/okpAerLB/project-vagabond)
-
-### These are our Wireframes and Group Planning 
-
-[Planning]
-(https://imgur.com/a/Yn2jV8R)
-
-![Group Jokes](https://i.imgur.com/bvGUWCX.png)
+![Anxiety](https://i.imgur.com/cf9HPdV.jpg))
 
 ## Takeaways 
  
