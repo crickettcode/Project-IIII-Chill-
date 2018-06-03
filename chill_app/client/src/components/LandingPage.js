@@ -45,6 +45,7 @@ class LandingPage extends Component {
                         </div>
                     )
                 })}
+                <NewUser />
             </div>
 
 

@@ -16,10 +16,10 @@ class NewUser extends Component {
     }
 
     handleChange = (event) => {
-        const newname = event.target.newname
         const newUser = { ...this.state.newUser }
-        newUser[newname] = event.target.value
+        newUser[event.target.name] = event.target.value
         this.setState({ newUser })
+        console.log(event.target.value)
     }
 
 
@@ -32,8 +32,9 @@ class NewUser extends Component {
             gender: this.state.newUser.gender,
             height: this.state.newUser.height,
             weight: this.state.newUser.weight,
-
         }
+
+        console.log(userdata)
     }
 
     render() {
