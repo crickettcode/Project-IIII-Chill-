@@ -37,11 +37,11 @@ class ProfilePage extends Component {
                     <h1>ProfilePage</h1>
                     <User>
                         {this.state.user.username}
-
+                        <br />
                         {this.state.user.email}
-
+                        <br />
                         {this.state.user.date_of_birth}
-
+                        <br />
                         {this.state.user.gender}
                     </User>
                 </div>
@@ -62,7 +62,9 @@ const User = styled.div`
 background:#FFCD8F;
 display:flex;
 justify-content:space-between;
-flex-direction:column-reverse;
+flex-direction:column;
+
+
 padding:20px;
 
 `

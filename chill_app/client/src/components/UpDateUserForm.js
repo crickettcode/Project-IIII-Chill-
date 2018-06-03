@@ -29,6 +29,15 @@ class UpDateUserForm extends Component {
         console.log(event.target.value)
     }
 
+    getData = async () => {
+        const userData = await axios.get(`/api/users/${this.props.userId}`)
+        console.log(userData)
+    }
+
+    componentDidMount() {
+        this.getData()
+    }
+
 
     render() {
         return (
