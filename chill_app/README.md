@@ -31,22 +31,18 @@ The technologies that we used were:
 
 ## Takeaways 
  
- > For starters, I think that the group project was slightly more difficult than we initially anticipated. However, while we struggled in many areas, we gained valuable experience and discovered strengths in others. I think from the beginning that we started off as a team wih a good sense of commradery. Early on in the project we spent an entire weekend day at a team member's home and grilled out while we programmed. I think that behaviors' such as this have valuable real world application when it comes to team morale and communication. We mobbed programmed that day and continued with this style for the remainder of the project. Each day we spent our lunches' together and made an effort to keep up with our enthusiasm. 
- > Some of the weaknesses that we discovered as a team were difficulty with delegating tasks. It would have been to our advantage to mob program in the beginning of the project and to seperate the tasks further into the project in order to get more accomplished. I think that we struggled with this due to time constraints as well as the novelty of a "group project" to each of us individually. 
- > Throughout everything I do believe that this was a positive experience for the group as a whole. 
+ > For me, the last project was actually the most difficult.  I think that I put more pressure on myself than was necessary because I wanted it to be the very best project I'd ever done. In the end, I believe it was that, just in a different way than I had planned. This project may not look outstanding and it's certainly not what I had imagined my final project would be when I first began this course, but honestly, it is still MY best project. It is the culmination of three months of extremely hard work, committment, and dedication. I pushed myself farther than I ever thought I could, and I didn't quit. I love Web development more than I ever have and cannot wait to follow my career path with a whole hearted fervor. I now know that I can grow and learn and be uncomfortable and not only survive the experience but thrive in the process. <br/>
+ > My favorite part of this project was pulling in the API and realizing the freedom I have found in creating the things that I enjoy and the opportunity to problem solve and take my dreams and the dreams of others' and create a reality. The other big takeaway from this project was the commradory I found in my classmates and fellow coding community. I spent the last weekend of the project at a former GA student's house with a few other classmates and we bonded over the final project and supporting eachother through the end of the beginning of our shared journey into the tech field. 
+ > The most difficult part of this project was completing all of my plans for the application. I will be spending the next two weeks refactoring and implenting the remaining API's to create the full user experience that I originally desired. 
 
-
+ 
 ### Skills Aquired
 
-+ Communication Skills
-+ Awareness of Selfishness translates to a more selfless attitude 
-+ Kindness and Patience solves problems better than a poor attitude 
++ The strength found in connecting with classmates and the tech community 
 + Understanding Frustration leads to solving problems
-+ Encouragement keeps everyone happy 
-+ Time management should be at the forefront of planning
-+ Compassion builds your teammates and in the end benefits everyone 
-+ Grace should be bestowed first, you will need it back in the end 
-+ Shared Success = Shared Failure
-+ The Rising Tide Raises all Ships
-+ All these Pieces Make the Whole Picture - you accomplish more together than you do alone
++ Gratitude and a positive attitude
++ Time management
+
+
+### Mostly, I learned that this course was everything I'd hoped for, and then some :) 
 
