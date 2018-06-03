@@ -5,6 +5,8 @@ import axios from 'axios'
 import NavBar from './components/Navbar'
 import ProfilePage from './components/ProfilePage'
 import LandingPage from './components/LandingPage'
+import JournalEntries from './components/JournalEntries'
+
 class App extends Component {
   render() {
     return (
@@ -17,15 +19,12 @@ class App extends Component {
                 <h1>Chill</h1>
               </NavBar>
               <div>
-
-                <div><Link to="/users">ProfilePage</Link></div>
-                <Link to="/">Home</Link>
               </div>
             </div>
 
             <Route exact path="/users/:id" component={ProfilePage} />
             <Route exact path="/users" component={LandingPage} />
-            {/* <Route path="/users/:id" component={HomePage} /> */}
+            <Route exact path="/users/:user_id/journal_entries" component={JournalEntries} />
 
           </div>
         </Switch>
@@ -52,28 +51,3 @@ export default App;
 
 
 
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         {/* <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" /> */}
-//           <h1 className="App-title">Welcome to React</h1>
-//         </header>
-//         <p className="App-intro">
-//           To get started, edit <code>src/App.js</code> and save to reload.
-//         </p>
-//       </div>
-//     );
-//   }
-// }
-
-// export default App;
-
-
-// import React, {Component} from "react";
-// import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-// import ArtistList from "./components/ArtistList";
-// import Artist from "./components/Artist";
-// import "./App.css";

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import axios from 'axios'
 import UpDateUserForm from './UpDateUserForm'
+import JournalEntries from './JournalEntries'
 
 class ProfilePage extends Component {
 
@@ -47,6 +48,8 @@ class ProfilePage extends Component {
                 </div>
                 <button onClick={this.removeUser}>delete</button>
                 <UpDateUserForm userId={this.state.user.id} />
+
+                <Link to="/users/user_id/journal_entries">JournalEntries</Link>
             </Profile>
         );
     }
