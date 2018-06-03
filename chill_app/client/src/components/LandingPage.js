@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Navbar from './Navbar'
 import NewUser from './NewUser'
+import Xkcd from './Xkcd'
 
 
 class LandingPage extends Component {
@@ -46,6 +47,7 @@ class LandingPage extends Component {
                     )
                 })}
                 <NewUser />
+                <Xkcd />
             </div>
 
 
