@@ -25,6 +25,14 @@ class ProfilePage extends Component {
         console.log(this.state)
     }
 
+    removeUser = () => {
+        const userId = this.props.match.params.id
+        axios.delete(`/api/users/${userId}`)
+            .then(() => {
+                this.props.history.push("/")
+            })
+
+    }
     render() {
         return (
             <Profile>
@@ -40,8 +48,10 @@ class ProfilePage extends Component {
                         {this.state.user.gender}
                     </User>
                 </div>
-
+                <button onClick={this.removeUser}>delete</button>
             </Profile>
+
+
         );
     }
 }

@@ -34,6 +34,9 @@ class NewUser extends Component {
             weight: this.state.newUser.weight,
         }
 
+        const newuser = await axios.post(`/api/users`, userdata)
+
+
         console.log(userdata)
     }
 
@@ -66,7 +69,7 @@ class NewUser extends Component {
                         <input onChange={this.handleChange} type="text" name="weight" />
 
                     </div>
-                    <button>Submit</button>
+                    <button>Create</button>
 
                 </form>
             </div>
