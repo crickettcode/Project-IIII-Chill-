@@ -22,6 +22,7 @@ class ProfilePage extends Component {
         })
     }
 
+
     removeUser = () => {
         const userId = this.props.match.params.id
         axios.delete(`/api/users/${userId}`)
@@ -45,7 +46,7 @@ class ProfilePage extends Component {
                     </User>
                 </div>
                 <button onClick={this.removeUser}>delete</button>
-                <UpDateUserForm userData={this.state.user} />
+                <UpDateUserForm userId={this.state.user.id} />
             </Profile>
         );
     }
