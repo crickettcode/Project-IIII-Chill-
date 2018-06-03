@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import axios from 'axios'
-
+import UpDateUserForm from './UpDateUserForm'
 
 class ProfilePage extends Component {
 
@@ -17,12 +17,9 @@ class ProfilePage extends Component {
     getUser = async () => {
         const userid = this.props.match.params.id
         const response = await axios.get(`/api/users/${userid}`)
-        console.log(response.data)
         this.setState({
             user: response.data
-
         })
-        console.log(this.state)
     }
 
     removeUser = () => {
@@ -31,7 +28,6 @@ class ProfilePage extends Component {
             .then(() => {
                 this.props.history.push("/")
             })
-
     }
     render() {
         return (
@@ -49,9 +45,8 @@ class ProfilePage extends Component {
                     </User>
                 </div>
                 <button onClick={this.removeUser}>delete</button>
+                <UpDateUserForm userData={this.state.user} />
             </Profile>
-
-
         );
     }
 }
