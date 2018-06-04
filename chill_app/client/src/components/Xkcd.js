@@ -11,7 +11,7 @@ class Xkcd extends Component {
 
     getXkcd = async () => {
         const random = Math.floor((Math.random() * 2000) + 1);
-        const xkcd = await axios.get(`http://xkcd.com/${random}/info.0.json`)
+        const xkcd = await axios.get(`https://xkcd.com/${random}/info.0.json`)
         this.setState({
             xkcd: xkcd.data
 
