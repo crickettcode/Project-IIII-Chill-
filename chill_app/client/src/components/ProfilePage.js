@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import axios from 'axios'
 import UpDateUserForm from './UpDateUserForm'
 import JournalEntries from './JournalEntries'
+import CheckIns from './CheckIns'
 
 class ProfilePage extends Component {
 
@@ -50,6 +51,8 @@ class ProfilePage extends Component {
                 <UpDateUserForm userId={this.state.user.id} />
 
                 <Link to={`/users/${this.props.match.params.id}/journal_entries`}>JournalEntries </Link>
+                <br />
+                <Link to={`/users/${this.props.match.params.id}/check_ins`}>CheckIns</Link>
             </Profile >
         );
     }

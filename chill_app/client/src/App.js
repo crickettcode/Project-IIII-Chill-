@@ -6,6 +6,7 @@ import NavBar from './components/Navbar'
 import ProfilePage from './components/ProfilePage'
 import LandingPage from './components/LandingPage'
 import JournalEntries from './components/JournalEntries'
+import CheckIns from './components/CheckIns'
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
             <Route exact path="/users/:id" component={ProfilePage} />
             <Route exact path="/users" component={LandingPage} />
             <Route exact path="/users/:user_id/journal_entries" component={JournalEntries} />
+            <Route exact path="/users/:user_id/check_ins" component={CheckIns} />
 
           </div>
         </Switch>
