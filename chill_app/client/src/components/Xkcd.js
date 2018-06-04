@@ -49,4 +49,11 @@ border:solid;
 border-color:#50D9E8;
 padding:20px;
 margin:20px;
+
+img {
+    width:95%;
+    height:100%;
+    margin:0 auto;
+}
+
 `
