@@ -42,36 +42,38 @@ class UpDateUserForm extends Component {
     render() {
         return (
             <div>
+                <Update>
+                    <form onSubmit={this.updateUser}>
+                        <div>
+                            <label htmlFor="username">Username:</label>
+                            <input onChange={this.handleChange} type="text" name="username" />
+                        </div>
+                        <div>
+                            <label htmlFor="email">Email:</label>
+                            <input onChange={this.handleChange} type="text" name="email" value={this.state.updatedUser.email} />
+                        </div>
+                        <div>
+                            <label htmlFor="date_of_birth">Date_of_Birth:</label>
+                            <input onChange={this.handleChange} type="text" name="date_of_birth" value={this.state.updatedUser.date_of_birth} />
+                        </div>
+                        <div>
+                            <label htmlFor="gender">Gender:</label>
+                            <input onChange={this.handleChange} type="text" name="gender" value={this.state.updatedUser.gender} />
+                        </div>
+                        <div>
+                            <label htmlFor="height">Height:</label>
+                            <input onChange={this.handleChange} type="text" name="height" value={this.state.updatedUser.height} />
+                        </div>
+                        <div>
+                            <label htmlFor="weight">Weight:</label>
+                            <input onChange={this.handleChange} type="text" name="weight" value={this.state.updatedUser.weight} />
 
-                <form onSubmit={this.updateUser}>
-                    <div>
-                        <label htmlFor="username">Username:</label>
-                        <input onChange={this.handleChange} type="text" name="username" />
-                    </div>
-                    <div>
-                        <label htmlFor="email">Email:</label>
-                        <input onChange={this.handleChange} type="text" name="email" value={this.state.updatedUser.email} />
-                    </div>
-                    <div>
-                        <label htmlFor="date_of_birth">Date_of_Birth:</label>
-                        <input onChange={this.handleChange} type="text" name="date_of_birth" value={this.state.updatedUser.date_of_birth} />
-                    </div>
-                    <div>
-                        <label htmlFor="gender">Gender:</label>
-                        <input onChange={this.handleChange} type="text" name="gender" value={this.state.updatedUser.gender} />
-                    </div>
-                    <div>
-                        <label htmlFor="height">Height:</label>
-                        <input onChange={this.handleChange} type="text" name="height" value={this.state.updatedUser.height} />
-                    </div>
-                    <div>
-                        <label htmlFor="weight">Weight:</label>
-                        <input onChange={this.handleChange} type="text" name="weight" value={this.state.updatedUser.weight} />
+                        </div>
+                        <br />
+                        <button>Update</button>
 
-                    </div>
-                    <button>Update</button>
-
-                </form>
+                    </form>
+                </Update>
             </div>
 
 
@@ -80,4 +82,16 @@ class UpDateUserForm extends Component {
     }
 }
 
-export default UpDateUserForm; 
+export default UpDateUserForm;
+
+const Update = styled.div`
+padding:20px;
+
+
+
+button {
+    padding:20px;
+    marign:0, auto;
+}
+
+`

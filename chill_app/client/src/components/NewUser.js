@@ -104,6 +104,7 @@ button {
     font-size:11px;
     border-radius:10px;
     margin:0, auto;
+    border-color:white;
 }
 `
 

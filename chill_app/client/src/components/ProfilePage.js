@@ -73,6 +73,8 @@ flex-direction:column;
 padding:20px;
 `
 const Action = styled.div`
+ padding:20px;
+
 
 button {
     border:solid;
