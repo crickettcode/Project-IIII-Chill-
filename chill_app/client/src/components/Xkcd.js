@@ -26,10 +26,13 @@ class Xkcd extends Component {
                 <div>
                     <button onClick={this.getXkcd}>Comic</button>
                     <h1>Its not that Serious</h1>
-                    {this.state.xkcd.alt}
+
                     <br />
                     <img src={this.state.xkcd.img} />
                     {this.state.xkcd.link}
+                    <br />
+                    {this.state.xkcd.alt}
+
                 </div>
             </Comic>
         )
@@ -49,6 +52,7 @@ border:solid;
 border-color:#50D9E8;
 padding:20px;
 margin:20px;
+color:#490D66;
 
 img {
     width:95%;
