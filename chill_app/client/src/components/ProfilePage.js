@@ -47,9 +47,10 @@ class ProfilePage extends Component {
                         {this.state.user.gender}
                     </User>
                 </div>
-                <button onClick={this.removeUser}>delete</button>
-                <UpDateUserForm userId={this.state.user.id} />
-
+                <Action>
+                    <button onClick={this.removeUser}>delete</button>
+                    <UpDateUserForm userId={this.state.user.id} />
+                </Action>
                 <Link to={`/users/${this.props.match.params.id}/journal_entries`}>JournalEntries </Link>
                 <br />
                 <Link to={`/users/${this.props.match.params.id}/check_ins`}>CheckIns</Link>
@@ -69,8 +70,19 @@ background:#FFCD8F;
 display:flex;
 justify-content:space-between;
 flex-direction:column;
-
-
 padding:20px;
+`
+const Action = styled.div`
+
+button {
+    border:solid;
+    border-radius:10px;
+    padding:10px;
+    color:white;
+    background:#FFCD8F;
+    font-style:bold;
+    font-family:monospace;
+    font-size:12px;
+}
 
 `
