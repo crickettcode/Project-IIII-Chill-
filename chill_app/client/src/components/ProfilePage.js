@@ -49,7 +49,7 @@ class ProfilePage extends Component {
                 <button onClick={this.removeUser}>delete</button>
                 <UpDateUserForm userId={this.state.user.id} />
 
-                <Link to="/users/:user_id/journal_entries">JournalEntries </Link>
+                <Link to={`/users/${this.props.match.params.id}/journal_entries`}>JournalEntries </Link>
             </Profile >
         );
     }

@@ -15,7 +15,7 @@ class JournalEntries extends Component {
     }
 
     getJournalEntries = async () => {
-        const response = await axios.get(`/api/users/${this.state.userid}/journal_entries`)
+        const response = await axios.get(`/api/users/${this.props.match.params.user_id}/journal_entries`)
         this.setState({
             JournalEntries: response.data
         })
