@@ -27,11 +27,21 @@ justify-content: space-around;
 width: 100vw;
 color:white;
 font-size:38;
+font-weight:bold;
+font-size:20px;
+
+
+
+p.oblique {
+    font-style: oblique;
+}
+
 
 a {
     color: white;
     font-size:20px;
-
+    font-family:monospace;
+}
 `
 
 

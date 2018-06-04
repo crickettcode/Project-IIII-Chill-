@@ -26,33 +26,35 @@ class CheckIns extends Component {
     render() {
         return (
             <Stats>
-                <div>
-                    {this.state.CheckIns.map((check_ins, i) => {
-                        return (
-                            <div key={i}>
-                                "energy" {check_ins.energy}
-                                <br />
-                                "grateful"  {check_ins.grateful}
-                                <br />
-                                "hunger"  {check_ins.hunger}
-                                <br />
-                                "mental"  {check_ins.mental}
-                                <br />
-                                "mood" {check_ins.mood}
-                                <br />
-                                "motivated" {check_ins.motivated}
-                                <br />
-                                "physical"   {check_ins.physical}
-                                <br />
-                                "supported"   {check_ins.supported}
-                                <br />
-                                "time_of_day"  {check_ins.time_of_day}
-                                <br />
-                            </div>
+                <Point> <h1>Today I feel...</h1>
+                    <div>
+                        {this.state.CheckIns.map((check_ins, i) => {
+                            return (
+                                <div key={i}>
+                                    "energy" {check_ins.energy}
+                                    <br />
+                                    "grateful"  {check_ins.grateful}
+                                    <br />
+                                    "hunger"  {check_ins.hunger}
+                                    <br />
+                                    "mental"  {check_ins.mental}
+                                    <br />
+                                    "mood" {check_ins.mood}
+                                    <br />
+                                    "motivated" {check_ins.motivated}
+                                    <br />
+                                    "physical"   {check_ins.physical}
+                                    <br />
+                                    "supported"   {check_ins.supported}
+                                    <br />
+                                    "time_of_day"  {check_ins.time_of_day}
+                                    <br />
+                                </div>
 
-                        )
-                    })}
-                </div>
+                            )
+                        })}
+                    </div>
+                </Point>
             </Stats>
         )
     }
@@ -67,10 +69,24 @@ margin:0 auto;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
-padding:30px;
+padding:40px;
 background:#FFB387;
 font-family:monospace;
 font-size:15px;
+border:solid;
+border-color:whitesmoke;
+color:whitesmoke;
 
+h1 {
+    font-size:15px;
+}
 
+`
+
+const Point = styled.div`
+background:#62DACA;
+padding:20px;
+border:solid;
+border-color:whitesmoke;
+border-radius:10px;
 `
