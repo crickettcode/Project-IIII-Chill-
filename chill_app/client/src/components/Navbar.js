@@ -35,9 +35,10 @@ color:white;
 font-size:38;
 font-weight:bold;
 font-size:20px;
-border-radius:10px;
+border-radius:50px;
 border:solid;
 margin:0,auto;
+/* padding:20px; */
 
 
 
@@ -54,6 +55,7 @@ a {
     flex-direction:row;
     border:solid;
     border-color:#FFCD8F;
+
 }
 
 
@@ -66,7 +68,9 @@ h1 {
   font-style:bold;
   background:white;
   border:solid;
-  border-radius:10px;
+  border-radius:20px;
+  padding:30px;
+
 
 }
 `
@@ -78,6 +82,8 @@ flex-direction:column;
 align-content:space-around;
 padding:30px;
 border-width:20px;
+width:50px;
+border-radius:40px;
 
 
 
@@ -88,6 +94,7 @@ background:#AAFFDE;
 padding:70px;
 display:flex;
 flex-direction:column;
+
 
 @media (max-width: 400px){
     main {
