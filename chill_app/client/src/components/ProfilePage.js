@@ -87,4 +87,10 @@ button {
     font-size:12px;
 }
 
+@media (max-width: 400px){
+  main {
+    flex-direction: column;
+  }
+}
+
 `

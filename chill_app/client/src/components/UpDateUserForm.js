@@ -91,7 +91,13 @@ padding:20px;
 
 button {
     padding:20px;
-    marign:0, auto;
+    margin:0, auto;
+}
+
+@media (max-width: 400px){
+  main {
+    flex-direction: column;
+  }
 }
 
 `

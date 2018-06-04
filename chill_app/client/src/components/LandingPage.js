@@ -87,4 +87,10 @@ a {
     flex-direction:column;
 }
 
+@media (max-width: 400px) {
+  main {
+    flex-direction: column;
+  }
+}
 `
+

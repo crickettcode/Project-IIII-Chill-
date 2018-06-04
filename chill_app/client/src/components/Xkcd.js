@@ -55,8 +55,8 @@ margin:20px;
 color:#490D66;
 
 img {
-    width:95%;
-    height:100%;
+   max-width:95%;
+   max-height:100%;
     margin:0 auto;
     min-width:50px;
     display:flex;
@@ -86,6 +86,12 @@ button {
     border-radius:10px;
 
     
+}
+
+@media (max-width: 400px){
+  main {
+    flex-direction: column;
+  }
 }
 
 `

@@ -114,4 +114,10 @@ padding:10px;
 border-color:#FFCD8F;
 margin:0, auto;
 
+@media (max-width: 400px){
+  main {
+    flex-direction: column;
+  }
+}
+
 `
