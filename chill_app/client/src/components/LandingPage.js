@@ -38,16 +38,19 @@ class LandingPage extends Component {
 
 
         return (
+
             <div>
-                {this.state.users.map((user, i) => {
-                    return (
-                        <div key={i}>
-                            <Link to={`/users/${user.id}`} >{user.username}</Link>
-                        </div>
-                    )
-                })}
-                <NewUser />
-                <Xkcd />
+                <User>
+                    {this.state.users.map((user, i) => {
+                        return (
+                            <div key={i}>
+                                <Link to={`/users/${user.id}`} >{user.username}</Link>
+                            </div>
+                        )
+                    })}
+                    <NewUser />
+                    <Xkcd />
+                </User>
             </div>
 
 
@@ -69,4 +72,19 @@ class LandingPage extends Component {
 
 
 
+
 export default LandingPage;
+
+const User = styled.div`
+background:#FFAD88;
+padding:20px;
+
+a {
+    color:white;
+    font-size:15px;
+    font-family:monospace;
+    display:flex;
+    flex-direction:column;
+}
+
+`
