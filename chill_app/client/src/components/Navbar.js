@@ -38,7 +38,7 @@ font-size:20px;
 border-radius:50px;
 border:solid;
 margin:0,auto;
-/* padding:20px; */
+padding:10px;
 
 
 
@@ -52,9 +52,11 @@ a {
     font-size:20px;
     font-family:monospace;
     display:flex;
-    flex-direction:row;
+    flex-direction:column-reverse;
     border:solid;
     border-color:#FFCD8F;
+    margin:auto;
+    border-width:5px;
 
 }
 
@@ -80,10 +82,12 @@ const Header = styled.div`
 display:flex;
 flex-direction:column;
 align-content:space-around;
-padding:30px;
+justify-content:center;
+padding:20px;
 border-width:20px;
 width:50px;
 border-radius:40px;
+justify-content:center;
 
 
 
