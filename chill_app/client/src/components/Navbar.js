@@ -36,7 +36,7 @@ font-size:38;
 font-weight:bold;
 font-size:20px;
 border-radius:10px;
-
+border:solid;
 margin:0,auto;
 
 
@@ -60,8 +60,14 @@ a {
 h1 {
     color:#8FFDFF;
     font-variant:20px;
-    font-weight:100;
+    font-weight:150;
     font-size:50px;
+  box-shadow:#AAFFDE;
+  font-style:bold;
+  background:white;
+  border:solid;
+  border-radius:10px;
+
 }
 `
 

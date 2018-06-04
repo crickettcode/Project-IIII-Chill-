@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
 
+
 class NewUser extends Component {
     state = {
         newUser: {
@@ -42,39 +43,43 @@ class NewUser extends Component {
 
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    <div>
-                        <label htmlFor="username">Username:</label>
-                        <input onChange={this.handleChange} type="text" name="username" />
-                    </div>
-                    <div>
-                        <label htmlFor="email">Email:</label>
-                        <input onChange={this.handleChange} type="text" name="email" />
-                    </div>
-                    <div>
-                        <label htmlFor="date_of_birth">Date_of_Birth:</label>
-                        <input onChange={this.handleChange} type="text" name="date_of_birth" />
-                    </div>
-                    <div>
-                        <label htmlFor="gender">Gender:</label>
-                        <input onChange={this.handleChange} type="text" name="gender" />
-                    </div>
-                    <div>
-                        <label htmlFor="height">Height:</label>
-                        <input onChange={this.handleChange} type="text" name="height" />
-                    </div>
-                    <div>
-                        <label htmlFor="weight">Weight:</label>
-                        <input onChange={this.handleChange} type="text" name="weight" />
+            <Form>
+                <div>
+                    <form onSubmit={this.handleSubmit}>
+                        <Input>
+                            <div>
+                                <label htmlFor="username">Username:</label>
+                                <input onChange={this.handleChange} type="text" name="username" />
+                            </div>
+                            <div>
+                                <label htmlFor="email">Email:</label>
+                                <input onChange={this.handleChange} type="text" name="email" />
+                            </div>
+                            <div>
+                                <label htmlFor="date_of_birth">Date_of_Birth:</label>
+                                <input onChange={this.handleChange} type="text" name="date_of_birth" />
+                            </div>
+                            <div>
+                                <label htmlFor="gender">Gender:</label>
+                                <input onChange={this.handleChange} type="text" name="gender" />
+                            </div>
+                            <div>
+                                <label htmlFor="height">Height:</label>
+                                <input onChange={this.handleChange} type="text" name="height" />
+                            </div>
+                            <div>
+                                <label htmlFor="weight">Weight:</label>
+                                <input onChange={this.handleChange} type="text" name="weight" />
 
-                    </div>
-                    <button>Create</button>
+                            </div>
+                        </Input>
 
-                </form>
-            </div>
+                        <button>Create</button>
 
+                    </form>
+                </div>
 
+            </Form>
         )
 
     }
@@ -82,3 +87,30 @@ class NewUser extends Component {
 }
 
 export default NewUser;
+
+const Form = styled.div`
+background:#8FFDFF;
+padding:20px;
+font-family:monospace;
+
+a {
+    color:whitesmoke;
+}
+
+button {
+    color:#EB3F6A;
+    border:solid;
+    padding:10px;
+    font-size:11px;
+    border-radius:10px;
+    margin:0, auto;
+}
+`
+
+const Input = styled.div`
+border:solid;
+padding:10px;
+border-color:#FFCD8F;
+margin:0, auto;
+
+`

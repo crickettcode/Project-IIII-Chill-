@@ -78,9 +78,12 @@ h1 {
 }
 
 button {
-    color:#16CFA6;
+    color:#EB3F6A;
     border:solid;
     border-color:#FFDAE4;
+    font-size:11px;
+    padding:10px;
+    border-radius:10px;
 
     
 }
