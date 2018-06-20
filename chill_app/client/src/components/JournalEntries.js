@@ -30,14 +30,15 @@ class JournalEntries extends Component {
             <Journal>
                 <Footer>Today was...</Footer>
                 <br />
-                <div>
-                    {this.state.JournalEntries.map((entry, i) => {
-                        return (
-                            <div key={i}>{entry.paragraph_entry}</div>
-                        )
-                    })}
-                </div>
-
+                <h2>
+                    <div>
+                        {this.state.JournalEntries.map((entry, i) => {
+                            return (
+                                <div key={i}>{entry.paragraph_entry}</div>
+                            )
+                        })}
+                    </div>
+                </h2>
             </Journal>
 
 
@@ -69,4 +70,11 @@ border:solid;
 border-color:whitesmoke;
 justify-content:space-between;
 margin:0,auto;
+font-size:20px;
+
+
+h2 {
+    font-size:15px;
+    font-family:monospace;
+}
 `

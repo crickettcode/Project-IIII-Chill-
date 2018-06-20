@@ -49,22 +49,27 @@ class UpDateUserForm extends Component {
                             <label htmlFor="username">Username:</label>
                             <input onChange={this.handleChange} type="text" name="username" />
                         </div>
+                        <br />
                         <div>
                             <label htmlFor="email">Email:</label>
                             <input onChange={this.handleChange} type="text" name="email" value={this.state.updatedUser.email} />
                         </div>
+                        <br />
                         <div>
-                            <label htmlFor="date_of_birth">Date_of_Birth:</label>
+                            <label htmlFor="date_of_birth">Birthday:</label>
                             <input onChange={this.handleChange} type="text" name="date_of_birth" value={this.state.updatedUser.date_of_birth} />
                         </div>
+                        <br />
                         <div>
                             <label htmlFor="gender">Gender:</label>
                             <input onChange={this.handleChange} type="text" name="gender" value={this.state.updatedUser.gender} />
                         </div>
+                        <br />
                         <div>
                             <label htmlFor="height">Height:</label>
                             <input onChange={this.handleChange} type="text" name="height" value={this.state.updatedUser.height} />
                         </div>
+                        <br />
                         <div>
                             <label htmlFor="weight">Weight:</label>
                             <input onChange={this.handleChange} type="text" name="weight" value={this.state.updatedUser.weight} />
@@ -72,6 +77,7 @@ class UpDateUserForm extends Component {
                         </div>
                         <br />
                         <button class="ui blue inverted button">Update</button>
+                        <br />
 
                     </form>
                 </Update>
@@ -94,6 +100,13 @@ font-size:15px;
 button {
     padding:20px;
     margin:20, auto;
+}
+
+form {
+    display:flex;
+    padding:10px;
+    flex-direction:column;
+
 }
 
 @media (max-width: 400px){
