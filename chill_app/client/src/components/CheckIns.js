@@ -30,26 +30,28 @@ class CheckIns extends Component {
                     <div>
                         {this.state.CheckIns.map((check_ins, i) => {
                             return (
-                                <div key={i}>
-                                    "energy" {check_ins.energy}
-                                    <br />
-                                    "grateful"  {check_ins.grateful}
-                                    <br />
-                                    "hunger"  {check_ins.hunger}
-                                    <br />
-                                    "mental"  {check_ins.mental}
-                                    <br />
-                                    "mood" {check_ins.mood}
-                                    <br />
-                                    "motivated" {check_ins.motivated}
-                                    <br />
-                                    "physical"   {check_ins.physical}
-                                    <br />
-                                    "supported"   {check_ins.supported}
-                                    <br />
-                                    "time_of_day"  {check_ins.time_of_day}
-                                    <br />
-                                </div>
+                                <h2>
+                                    <div key={i}>
+                                        "energy" {check_ins.energy}
+                                        <br />
+                                        "grateful"  {check_ins.grateful}
+                                        <br />
+                                        "hunger"  {check_ins.hunger}
+                                        <br />
+                                        "mental"  {check_ins.mental}
+                                        <br />
+                                        "mood" {check_ins.mood}
+                                        <br />
+                                        "motivated" {check_ins.motivated}
+                                        <br />
+                                        "physical"   {check_ins.physical}
+                                        <br />
+                                        "supported"   {check_ins.supported}
+                                        <br />
+                                        "Time"  {check_ins.time_of_day}
+                                        <br />
+                                    </div>
+                                </h2>
 
                             )
                         })}
@@ -78,10 +80,17 @@ border-color:whitesmoke;
 color:whitesmoke;
 
 h1 {
-    font-size:15px;
+    font-size:20px;
+    font-family:monospace;
+}
+
+h2 {
+    font-size:20px;
+    font-family:monospace;
 }
 
 `
+
 
 const Point = styled.div`
 background:#62DACA;
