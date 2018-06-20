@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
-import { Button } from 'semantic-ui-react'
+import { Button, Input, Label, Form } from 'semantic-ui-react'
 
 
 class NewUser extends Component {
@@ -44,46 +44,46 @@ class NewUser extends Component {
 
     render() {
         return (
-            <Form>
+            <TopForm>
                 <div>
-                    <form onSubmit={this.handleSubmit}>
-                        <Input>
+                    <Form onSubmit={this.handleSubmit}>
+                        <TopInput>
                             <div>
-                                <label htmlFor="username">Username:</label>
-                                <input onChange={this.handleChange} type="text" name="username" />
+                                <Label htmlFor="username">Username:</Label>
+                                <Input onChange={this.handleChange} type="text" name="username" />
                             </div>
                             <br />
                             <div>
-                                <label htmlFor="email">Email:</label>
-                                <input onChange={this.handleChange} type="text" name="email" />
+                                <Label htmlFor="email">Email:</Label>
+                                <Input onChange={this.handleChange} type="text" name="email" />
                             </div>
                             <br />
                             <div>
-                                <label htmlFor="date_of_birth">Date_of_Birth:</label>
-                                <input onChange={this.handleChange} type="text" name="date_of_birth" />
+                                <Label htmlFor="date_of_birth">Date_of_Birth:</Label>
+                                <Input onChange={this.handleChange} type="text" name="date_of_birth" />
                             </div>
                             <br />
                             <div>
-                                <label htmlFor="gender">Gender:</label>
-                                <input onChange={this.handleChange} type="text" name="gender" />
+                                <Label htmlFor="gender">Gender:</Label>
+                                <Input onChange={this.handleChange} type="text" name="gender" />
                             </div>
                             <br />
                             <div>
-                                <label htmlFor="height">Height:</label>
-                                <input onChange={this.handleChange} type="text" name="height" />
+                                <Label htmlFor="height">Height:</Label>
+                                <Input onChange={this.handleChange} type="text" name="height" />
                             </div>
                             <br />
                             <div>
-                                <label htmlFor="weight">Weight:</label>
-                                <input onChange={this.handleChange} type="text" name="weight" />
+                                <Label htmlFor="weight">Weight:</Label>
+                                <Input onChange={this.handleChange} type="text" name="weight" />
                             </div>
                             <br />
-                        </Input>
+                        </TopInput>
                         <button class="ui violet inverted button" role="button" basic color='orange' content='Orange'>Create</button>
-                    </form>
+                    </Form>
                 </div>
 
-            </Form>
+            </TopForm>
         )
 
     }
@@ -92,23 +92,23 @@ class NewUser extends Component {
 
 export default NewUser;
 
-const Form = styled.div`
+const TopForm = styled.div`
 background:#8FFDFF;
 padding:40px;
 font-family:monospace;
 
 a {
-    color:whitesmoke;
+    color: whitesmoke;
 }
 
 button {
-    padding:20px;
-    justify-content:center;
+    padding: 20px;
+    justify - content: center;
 }
 
 `
 
-const Input = styled.div`
+const TopInput = styled.div`
 display:flex;
 justify-content:center;
 padding:20px;
@@ -117,10 +117,10 @@ font-size:15px;
 color:violet;
 
 
-@media (max-width: 400px){
-  main {
-    flex-direction: column;
-  }
+@media(max-width: 400px) {
+    main {
+        flex - direction: column;
+    }
 }
 
 `

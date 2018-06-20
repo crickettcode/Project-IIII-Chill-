@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
-import { Button } from 'semantic-ui-react'
+import { Button, Input, Label, Form } from 'semantic-ui-react'
 
 
 
@@ -44,42 +44,42 @@ class UpDateUserForm extends Component {
         return (
             <div>
                 <Update>
-                    <form onSubmit={this.updateUser}>
+                    <Form onSubmit={this.updateUser}>
                         <div>
-                            <label htmlFor="username">Username:</label>
-                            <input onChange={this.handleChange} type="text" name="username" />
+                            <Label htmlFor="username">Username:</Label>
+                            <Input onChange={this.handleChange} type="text" name="username" />
                         </div>
                         <br />
                         <div>
-                            <label htmlFor="email">Email:</label>
-                            <input onChange={this.handleChange} type="text" name="email" value={this.state.updatedUser.email} />
+                            <Label htmlFor="email">Email:</Label>
+                            <Input onChange={this.handleChange} type="text" name="email" value={this.state.updatedUser.email} />
                         </div>
                         <br />
                         <div>
-                            <label htmlFor="date_of_birth">Birthday:</label>
-                            <input onChange={this.handleChange} type="text" name="date_of_birth" value={this.state.updatedUser.date_of_birth} />
+                            <Label htmlFor="date_of_birth">Birthday:</Label>
+                            <Input onChange={this.handleChange} type="text" name="date_of_birth" value={this.state.updatedUser.date_of_birth} />
                         </div>
                         <br />
                         <div>
-                            <label htmlFor="gender">Gender:</label>
-                            <input onChange={this.handleChange} type="text" name="gender" value={this.state.updatedUser.gender} />
+                            <Label htmlFor="gender">Gender:</Label>
+                            <Input onChange={this.handleChange} type="text" name="gender" value={this.state.updatedUser.gender} />
                         </div>
                         <br />
                         <div>
-                            <label htmlFor="height">Height:</label>
-                            <input onChange={this.handleChange} type="text" name="height" value={this.state.updatedUser.height} />
+                            <Label htmlFor="height">Height:</Label>
+                            <Input onChange={this.handleChange} type="text" name="height" value={this.state.updatedUser.height} />
                         </div>
                         <br />
                         <div>
-                            <label htmlFor="weight">Weight:</label>
-                            <input onChange={this.handleChange} type="text" name="weight" value={this.state.updatedUser.weight} />
+                            <Label htmlFor="weight">Weight:</Label>
+                            <Input onChange={this.handleChange} type="text" name="weight" value={this.state.updatedUser.weight} />
 
                         </div>
                         <br />
                         <button class="ui blue inverted button">Update</button>
                         <br />
 
-                    </form>
+                    </Form>
                 </Update>
             </div>
 
