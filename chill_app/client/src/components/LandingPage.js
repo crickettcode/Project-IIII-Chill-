@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import Navbar from './Navbar'
 import NewUser from './NewUser'
 import Xkcd from './Xkcd'
+import { Container, Header } from 'semantic-ui-react'
+import { Grid, Segment, Divider } from 'semantic-ui-react'
 
 
 class LandingPage extends Component {
