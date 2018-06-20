@@ -29,6 +29,7 @@ class ProfilePage extends Component {
 
     removeUser = () => {
         const userId = this.props.match.params.id
+        console.log(userId)
         axios.delete(`/api/users/${userId}`)
             .then(() => {
                 this.props.history.push("/")
