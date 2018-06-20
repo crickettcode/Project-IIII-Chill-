@@ -8,28 +8,33 @@ import { Button } from 'semantic-ui-react'
 class Navbar extends Component {
     render() {
         return (
-            <NavBar>
+            <Parent>
                 <Container class="ui text container" textAlign="center">
-                    <h1>Chill</h1>
-
-
-                    <Header>
-                        <div class="ui large buttons">
-                            <button class="ui button"><Link to="/users">ProfilePage</Link></button>
-                            <div class="or"></div>
-                            <button class="ui button"><Link to="/">Home</Link></button>
-                        </div>
-
-                    </Header>
+                    <NavBar>
+                        <h1>Chill</h1>
+                        <Header>
+                            <div class="ui teal inverted large buttons">
+                                <button class="ui button"><Link to="/users">Profile</Link></button>
+                                <div class="or"></div>
+                                <button class="ui button"><Link to="/">Home</Link></button>
+                            </div>
+                        </Header>
+                    </NavBar>
                 </Container>
-            </NavBar>
-
+            </Parent>
         );
     }
 }
 
 export default Navbar;
 
+const Parent = styled.div`
+display:flex;
+flex-wrap:wrap-reverse;
+justify-content:center;
+padding:100px;
+flex-direction:stretch;
+`
 
 
 const NavBar = styled.div`
@@ -38,8 +43,6 @@ display:flex;
 justify-content: space-evenly;
 align-content:center;
 flex-direction:column;
-width: 80%;
-height:100%;
 color:white;
 font-size:38;
 font-weight:bold;
@@ -55,15 +58,24 @@ color: white;
 size: 20px;
 font-family: monospace;
 display: flex;
-flex - direction: column - reverse;
+flex-direction: column - reverse;
 border: solid;
-border - color: #FFCD8F;
+border-color: #FFCD8F;
 margin: auto;
-border - width: 5px;
+border-width: 10px;
 }
 
 }
 
+h1 {
+    color:whitesmoke;
+    display:flex;
+    flex-direction:row;
+    font-size:100px;
+    font-family:monospace;
+    padding:5px;
+    justify-content:center;
+}
 
 `
 
@@ -78,7 +90,7 @@ border - width: 5px;
 //   background:white;
 //   border:solid;
 //   border-radius:20px;
-//   padding:30px;
+ padding:30px;
 
 
 // }
