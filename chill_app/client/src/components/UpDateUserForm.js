@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
+import { Button } from 'semantic-ui-react'
 
 
 
@@ -70,7 +71,7 @@ class UpDateUserForm extends Component {
 
                         </div>
                         <br />
-                        <button>Update</button>
+                        <button class="ui blue inverted button">Update</button>
 
                     </form>
                 </Update>
@@ -85,13 +86,14 @@ class UpDateUserForm extends Component {
 export default UpDateUserForm;
 
 const Update = styled.div`
+display:flex;
+justify-content:space-around;
 padding:20px;
-
-
+font-size:15px;
 
 button {
     padding:20px;
-    margin:0, auto;
+    margin:20, auto;
 }
 
 @media (max-width: 400px){

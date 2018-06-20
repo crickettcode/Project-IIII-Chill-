@@ -41,7 +41,7 @@ class ProfilePage extends Component {
         return (
             <Profile>
                 <div>
-                    <h1>ProfilePage</h1>
+                    <h1></h1>
                     <User>
                         {this.state.user.username}
                         <br />
@@ -53,16 +53,18 @@ class ProfilePage extends Component {
                     </User>
                 </div>
                 <Action>
-
                     <Button
                         class="ui button" role="button" basic color='orange' content='Orange'
                         onClick={this.removeUser}>delete
                     </Button>
                     <UpDateUserForm userId={this.state.user.id} />
                 </Action>
-                <Link to={`/users/${this.props.match.params.id}/journal_entries`}>JournalEntries </Link>
                 <br />
-                <Link to={`/users/${this.props.match.params.id}/check_ins`}>CheckIns</Link>
+                <h3>
+                    <Link to={`/users/${this.props.match.params.id}/journal_entries`}>JournalEntries </Link>
+                    <br />
+                    <Link to={`/users/${this.props.match.params.id}/check_ins`}>CheckIns</Link>
+                </h3>
             </Profile >
         );
     }
@@ -81,18 +83,19 @@ display:flex;
 justify-content:space-between;
 flex-direction:column;
 padding:20px;
+font-size:15px;
+font-weight:25px;
 `
 const Action = styled.div`
  padding:20px;
+ 
+ h3 {
+     display:flex;
+     flex-direction:row;
+     justify-content:space-between;
+     font-size:18px;
+     margin:20px;
+ }
+ 
  `
 
-
-// }
-// }
-// @media(max - width: 400px) {
-//     main {
-//         flex - direction: column;
-//     }
-// }
-
-// `

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
+import { Button } from 'semantic-ui-react'
 
 class Xkcd extends Component {
 
@@ -24,14 +25,14 @@ class Xkcd extends Component {
         return (
             <Comic>
                 <div>
-                    <button onClick={this.getXkcd}>Comic</button>
-                    <h1>Its not that Serious</h1>
+                    <button class="ui pink inverted button" onClick={this.getXkcd}>Comic</button>
+                    <h1>Its not that Serious...</h1>
 
                     <br />
                     <img src={this.state.xkcd.img} />
                     {this.state.xkcd.link}
                     <br />
-                    {this.state.xkcd.alt}
+                    <h2>{this.state.xkcd.alt}</h2>
 
                 </div>
             </Comic>
@@ -54,6 +55,8 @@ padding:20px;
 margin:20px;
 color:#490D66;
 
+
+
 img {
    max-width:95%;
    max-height:100%;
@@ -73,25 +76,26 @@ h1 {
   margin: 5px;
   text-align: center;
   line-height: 100px;
-  font-size:20px;
-
-}
-
-button {
-    color:#EB3F6A;
-    border:solid;
-    border-color:#FFDAE4;
-    font-size:11px;
-    padding:10px;
-    border-radius:10px;
+  font-size:30px;
 
     
 }
 
-@media (max-width: 400px){
-  main {
-    flex-direction: column;
-  }
+h2 {
+    display:flex;
+    flex-wrap:row;
+    justify-content:center;
+    font-family:monospace;
+    size:15px;
+
+
+}
+
+
+@media(max - width: 400px) {
+    main {
+        flex - direction: column;
+    }
 }
 
 `

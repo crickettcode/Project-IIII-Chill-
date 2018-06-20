@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 import NewUser from './NewUser'
 import Xkcd from './Xkcd'
 import { Container, Header } from 'semantic-ui-react'
-import { Grid, Segment, Divider } from 'semantic-ui-react'
+
 
 
 class LandingPage extends Component {
@@ -46,7 +46,9 @@ class LandingPage extends Component {
                     {this.state.users.map((user, i) => {
                         return (
                             <div key={i}>
-                                <Link to={`/users/${user.id}`} >{user.username}</Link>
+                                <h2>
+                                    <Link to={`/users/${user.id}`} >{user.username}</Link>
+                                </h2>
                             </div>
                         )
                     })}
@@ -83,10 +85,14 @@ padding:20px;
 
 a {
     color:white;
-    font-size:15px;
+    font-size:20px;
     font-family:monospace;
     display:flex;
     flex-direction:column;
+}
+
+h2 {
+    font-size:20px;
 }
 
 @media (max-width: 400px) {
