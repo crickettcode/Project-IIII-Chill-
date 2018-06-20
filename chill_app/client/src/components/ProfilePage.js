@@ -5,6 +5,8 @@ import axios from 'axios'
 import UpDateUserForm from './UpDateUserForm'
 import JournalEntries from './JournalEntries'
 import CheckIns from './CheckIns'
+import { Button } from 'semantic-ui-react'
+
 
 class ProfilePage extends Component {
 
@@ -31,7 +33,10 @@ class ProfilePage extends Component {
             .then(() => {
                 this.props.history.push("/")
             })
+
+
     }
+
     render() {
         return (
             <Profile>
@@ -48,7 +53,11 @@ class ProfilePage extends Component {
                     </User>
                 </div>
                 <Action>
-                    <button onClick={this.removeUser}>delete</button>
+
+                    <Button
+                        class="ui button" role="button" basic color='orange' content='Orange'
+                        onClick={this.removeUser}>delete
+                    </Button>
                     <UpDateUserForm userId={this.state.user.id} />
                 </Action>
                 <Link to={`/users/${this.props.match.params.id}/journal_entries`}>JournalEntries </Link>
@@ -60,6 +69,7 @@ class ProfilePage extends Component {
 }
 
 export default ProfilePage;
+
 
 const Profile = styled.div`
 background: #8FFDFF;
@@ -74,23 +84,15 @@ padding:20px;
 `
 const Action = styled.div`
  padding:20px;
+ `
 
 
-button {
-    border:solid;
-    border-radius:10px;
-    padding:10px;
-    color:white;
-    background:#FFCD8F;
-    font-style:bold;
-    font-family:monospace;
-    font-size:12px;
-}
+// }
+// }
+// @media(max - width: 400px) {
+//     main {
+//         flex - direction: column;
+//     }
+// }
 
-@media (max-width: 400px){
-  main {
-    flex-direction: column;
-  }
-}
-
-`
+// `
