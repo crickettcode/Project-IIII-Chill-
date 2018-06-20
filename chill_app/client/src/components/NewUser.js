@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
+import { Button } from 'semantic-ui-react'
 
 
 class NewUser extends Component {
@@ -51,31 +52,34 @@ class NewUser extends Component {
                                 <label htmlFor="username">Username:</label>
                                 <input onChange={this.handleChange} type="text" name="username" />
                             </div>
+                            <br />
                             <div>
                                 <label htmlFor="email">Email:</label>
                                 <input onChange={this.handleChange} type="text" name="email" />
                             </div>
+                            <br />
                             <div>
                                 <label htmlFor="date_of_birth">Date_of_Birth:</label>
                                 <input onChange={this.handleChange} type="text" name="date_of_birth" />
                             </div>
+                            <br />
                             <div>
                                 <label htmlFor="gender">Gender:</label>
                                 <input onChange={this.handleChange} type="text" name="gender" />
                             </div>
+                            <br />
                             <div>
                                 <label htmlFor="height">Height:</label>
                                 <input onChange={this.handleChange} type="text" name="height" />
                             </div>
+                            <br />
                             <div>
                                 <label htmlFor="weight">Weight:</label>
                                 <input onChange={this.handleChange} type="text" name="weight" />
-
                             </div>
+                            <br />
                         </Input>
-
-                        <button>Create</button>
-
+                        <button class="ui violet inverted button" role="button" basic color='orange' content='Orange'>Create</button>
                     </form>
                 </div>
 
@@ -90,7 +94,7 @@ export default NewUser;
 
 const Form = styled.div`
 background:#8FFDFF;
-padding:20px;
+padding:40px;
 font-family:monospace;
 
 a {
@@ -98,21 +102,20 @@ a {
 }
 
 button {
-    color:#EB3F6A;
-    border:solid;
-    padding:10px;
-    font-size:11px;
-    border-radius:10px;
-    margin:0, auto;
-    border-color:white;
+    padding:20px;
+    justify-content:center;
 }
+
 `
 
 const Input = styled.div`
-border:solid;
-padding:10px;
-border-color:#FFCD8F;
+display:flex;
+justify-content:center;
+padding:20px;
 margin:0, auto;
+font-size:15px;
+color:violet;
+
 
 @media (max-width: 400px){
   main {
