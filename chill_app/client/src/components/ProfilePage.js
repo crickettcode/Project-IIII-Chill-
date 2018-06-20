@@ -31,7 +31,8 @@ class ProfilePage extends Component {
         const userId = this.props.match.params.id
         console.log(userId)
         axios.delete(`/api/users/${userId}`)
-            .then(() => {
+            .then((res) => {
+                console.log(res)
                 this.props.history.push("/")
             })
 
@@ -55,7 +56,7 @@ class ProfilePage extends Component {
                 </div>
                 <Action>
                     <Button
-                        class="ui button" role="button" basic color='orange' content='Orange'
+                        class="ui button" role="button" basic color='orange'
                         onClick={this.removeUser}>delete
                     </Button>
                     <UpDateUserForm userId={this.state.user.id} />
