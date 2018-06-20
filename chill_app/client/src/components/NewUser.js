@@ -48,32 +48,32 @@ class NewUser extends Component {
                 <div>
                     <Form onSubmit={this.handleSubmit}>
                         <TopInput>
-                            <div>
+                            <div class="ui pink circular label">
                                 <Label htmlFor="username">Username:</Label>
                                 <Input onChange={this.handleChange} type="text" name="username" />
                             </div>
                             <br />
-                            <div>
+                            <div class="ui violet circular label">
                                 <Label htmlFor="email">Email:</Label>
                                 <Input onChange={this.handleChange} type="text" name="email" />
                             </div>
                             <br />
-                            <div>
+                            <div class="ui teal circular label">
                                 <Label htmlFor="date_of_birth">Date_of_Birth:</Label>
                                 <Input onChange={this.handleChange} type="text" name="date_of_birth" />
                             </div>
                             <br />
-                            <div>
+                            <div class="ui pink circular label">
                                 <Label htmlFor="gender">Gender:</Label>
                                 <Input onChange={this.handleChange} type="text" name="gender" />
                             </div>
                             <br />
-                            <div>
+                            <div class="ui teal circular label">
                                 <Label htmlFor="height">Height:</Label>
                                 <Input onChange={this.handleChange} type="text" name="height" />
                             </div>
                             <br />
-                            <div>
+                            <div class="ui pink circular label">
                                 <Label htmlFor="weight">Weight:</Label>
                                 <Input onChange={this.handleChange} type="text" name="weight" />
                             </div>
@@ -83,7 +83,7 @@ class NewUser extends Component {
                     </Form>
                 </div>
 
-            </TopForm>
+            </TopForm >
         )
 
     }
